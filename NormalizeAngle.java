@@ -6,11 +6,11 @@ public class NormalizeAngle {
     public Integer normalizeValueUsingModulo(Integer angle){
         if (angle<0){
           
-            angle = angle + 359;
+            angle = angle + 360;
         }
         else
         {
-            angle = angle%359;
+            angle = angle%360;
         }
         
         return angle;
@@ -19,11 +19,11 @@ public class NormalizeAngle {
     public Integer normalizeValueUsingFloorMod(Integer integer){
         if (integer<0){
           
-            integer = integer + 359;
+            integer = integer + 360;
         }
         else
         {
-            integer = Math.floorMod(integer,359);
+            integer = Math.floorMod(integer,360);
         }
         
         return integer;
